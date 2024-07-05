@@ -1,0 +1,7 @@
+def opencsv(filmname):
+    f = open(filmname, 'r')
+    reader = csv.reader(f)
+    output = []
+    for i in reader:
+        output.append(i)
+    return output
