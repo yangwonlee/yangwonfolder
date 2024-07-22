@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clickEvent()">클릭</button>
+    <input type="text" onfocus="FocusEvent()" onblur="blurEvent()"> //블러는 들어오는 것 
+    <!--인라인 방식의 이벤트 등록-->
+    <div ondblclick="dblClickEvent();" style="cursor: pointer;">더블클릭</div>
+    <script>
+        function dblClickEvent(){
+            alert('더블클릭 이벤트 발생');
+        }
+        function clickEvent(){
+            alert('클릭 이벤트 발생');  // =얼럭션
+        }
+
+        function FocusEvent(){
+            alert('포커스 이벤트 발생');
+        }
+        function blurEvent(){
+            alert('블러 이벤트 발생');
+        }
+    </script>
+</body>
+</html>

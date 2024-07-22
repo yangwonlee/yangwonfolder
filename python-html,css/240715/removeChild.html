@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>text 1</p>
+    <a href="http:..www.gilbut.co.kr">길벗</a>
+    <a href="http:..www.sucoding.kr">수코딩</a>    
+    <script>
+        const pEl = document.querySelector('p');
+        pEl.parentNode.removeChild(pEl);    // =body.과 동일. 부모로 돌아가니까. 자식태그가 없다면 본인 자신이 삭제.
+
+        const childNodes = document.body.getElementsByTagName('a');
+        console.log(childNodes)
+
+        childNodes.forEach((Node) => {
+            if(node.node ==='A') {
+                node.parentNode.removeChild(node);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button data-cnt="10">가방 구매</button>
+    <button data-cnt="0">신발 구매</button> 
+    <script>
+        const buttonEls = document.querySelectorAll('button'); //array.
+        buttonEls.forEach(buttonEls =>{
+            // console.log(buttonEls.dataset.cnt);
+            buttonEls.dataset.cnt = 50; //뭐든 일치시키는게 중요. 따라서 왠만하면 자바처럼 ;를 붙여주면 좋다.
+        }); // 백엔드에 보낼 때 필요. 
+    </script>
+</body>
+</html>

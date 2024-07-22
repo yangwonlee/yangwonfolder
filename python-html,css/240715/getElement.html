@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">title</h1>
+    <p class="text">text-1</p>
+    <p class="text">text-2</p>
+
+    <button onClick="changeTitle()">title글자 대신 난수 생성</button>
+    <button onClick="changeText1()">title-1글자 대신 난수 생성</button>
+    <script>
+        // id속성값이 title인 요소 노드  1개 선택
+    const el = document.getElementById('title') //아이디가 뭐 인것을 가져오라. 라는 뜻. 여기서는 아이디가 타이틀.
+    console/log(el);
+
+    //자바 스크립트에서 난수 생성
+    function changeTitle() {
+        el.textContent = Math.random();
+    }
+    //class 속성값이 text인 요소 노드 모드 선택. s가 붙어있음.
+    const classEl = document.getElementsByClassName('text');
+
+    function changeText1() {
+        classEl[0].textContent = Math.random();
+    }
+
+    //p태그에 해당하는 요소 노드 모드 선택
+    document.getElementsByTagName('p');
+    for(let el of tagEls) {
+        console.log('for:', el)
+    }
+    // console.log(tagEls);
+    </script>
+</body>
+</html>

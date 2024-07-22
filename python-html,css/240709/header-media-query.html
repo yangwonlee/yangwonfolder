@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1>
+        hello world!
+    </h1>
+    <h1 class="text-[50px] text-[#ababab] font-bold underline">
+        Hello world!
+    </h1>
+    <div class="wrapper">
+        <!--<header calss="top--bar">-->
+        <!-- <header class="h-20 bg-blue-500">
+            <div class="pc--header-bar">pc메뉴화면</div>
+            <div class="mobileheader-bar">mobile메뉴화면</div>
+        </header> -->
+        <!-- <header class="pc--header-bar">pc메뉴화면</header>
+        <header class="mobileheader-bar">mobile메뉴화면</header> -->
+        <!-- <header class="h-20 bg-blue-500"> -->
+            <!--tailwind css 방식-->
+            <header class="hidden xl:block">pc메뉴화면</header>
+            <header class="xl:hidden">mobile메뉴화면</header>
+        <main>
+            <section>섹션1</section>
+            <section>섹션2</section>
+            <section>섹션3</section>
+        </main>
+        <footer>푸터화면</footer>
+    </div>
+</body>
+</html>

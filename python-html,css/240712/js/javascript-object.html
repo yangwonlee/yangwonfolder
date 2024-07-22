@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person1 = {};  //empty
+        const person2 = {name: "Hong Gildong"};  //empty
+        const person3 = {
+             name: ['Hong', 'Gildong'],
+            age: 20,
+            isAdult: true
+        };
+        console.log(person3.name);
+        console.log(person3['name']);
+        console.log(person3['name'][0]);
+        console.log(person3['name'][1]);
+
+        const person4 = {
+            name: {
+                firstName:"Gildong",
+                lastName:"Hong"
+            },
+            age: 20,
+            isAdult: true,
+            printInfo: function() {
+                console.log('printInfo====', this.age);
+            }
+        };
+        console.log(person4.name)
+        console.log(person4['name']);
+        console.log(person4['printInfo']);
+        console.log(person4['printInfo']());
+        console.log(person4.printInfo());
+
+        const person5 = {
+            "phone number":"010-000-0000"
+        };
+            console.log(person5["phone number"]);//key 이름에 공백이 있는 경우
+
+        //객체 속성 값 변경
+        person2.name = '유관순';
+        console.log(person2.name); //유관순
+        //객체 속성 추가하기
+        console.log('person2(전):', person2); 
+        person2.age = 21;
+        console.log('person2(후):', person2);
+        //객체 속성 삭제하기
+        delete person3.age; //추가한 age 속성 삭제.
+        console.log('person2(삭제후):', person2);
+
+        console.log(`asdf
+            gsa`);
+
+        const ironMan = {
+            name: '토니 스타크',
+            actor: '로버트 다우니 주니어',
+            alias: '아이언맨'
+        };
+
+        const captinAmerica = {
+            name: '스티븐 로저스',
+            actor: '크리스 에반스',
+            alias: '캡아'
+        };
+
+        function print(hero) {
+            const { alias, actor } = hero;
+            const text = `${alias}(${name}) 역할을 맡은 배우는 ${actor}입니다.`;
+            console.log(text);
+        };
+    </script>
+</body>
+</html>

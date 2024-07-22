@@ -1,0 +1,21 @@
+data = """name,age,sex,birth,blood type
+yangwon,29,m,924,b
+minhwa,56,f,1221,o
+subok,59,m,1113,ab
+heeju,25,f,626,b
+jun,23,m,530,b
+haeju,25,f,922,o
+jongsung,29,m,325,o
+jonghwa,33,m,417,ab
+unhee,29,f,11,b
+yunhee,34,f,1007,b
+honggi,64,m,104,ab
+gyungsuk,59,f,602,a
+junggi,60,m,707,a
+gyunghee,59,f,824,ab
+soyoung,52,f,220,b
+hyungseok,53,m,701,o
+"""
+
+with open('information.csv', 'w') as file:
+    file.write(data)

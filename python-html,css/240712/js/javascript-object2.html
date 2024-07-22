@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const number = {
+            a:1,
+            b:2,
+            get sum() {
+                console.log('sum함수가 실행됩니다!');
+                return this.a + this.b;
+            }
+        };
+        console.log(numbers.sum);
+        number.b=5;
+        console.log(numbers.sum);
+    </script>
+</body>
+</html>

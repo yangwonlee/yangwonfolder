@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+D:\java-alone\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2143185148.index
+\starbucks-hompage\src\main\java
+D:\java-alone\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\167202394.index
+\starbucks-hompage\src\main\java

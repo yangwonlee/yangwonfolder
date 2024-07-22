@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.naver.com" id="naver-id">네이버 이동</a>
+    <a href="https://www.daum.net" id="daum-id"> 다음 이동</a>
+    <script>
+        const aEls = document.querySelectorAll('a');
+        aEls.forEach(aEl =>{
+            aEl.addEventListener('click', function(e){
+                //기본 이벤트를 상쇄. 백엔드 시, 이벤트는 동작하지 않으면서 내가 원하는 것들을 할 때 주로 사용하는 메소드.
+                e.preventDefault();
+
+                console.log(aEl.getAttribute('id'));
+                if(this.id === 'naver-id'){
+                    this.style.backgroundColor = 'yellow';
+                }
+                if(this.id === 'daum-id'){
+                    this.style.backgroundColor = 'red';
+                }
+               
+            });
+        });
+
+    </script>
+</body>
+</html>
